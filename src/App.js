@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>XDictionary</h1>
+      <h1>Dictionary App</h1>
       <div>
         <input
           type="text"
@@ -37,7 +37,10 @@ function App() {
         />
         <button onClick={handleSearch}>Search</button>
       </div>
-      {result && <p>{result}</p>}
+      <div>
+        <h2>Definition:</h2>
+        <p>{result}</p>
+      </div>
     </div>
   );
 }
